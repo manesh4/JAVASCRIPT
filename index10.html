@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+
+<script>
+let text = "welcome to the shree placement "; 
+let n = text.search("shree");
+document.getElementById("demo").innerHTML = n;
+</script> -->
+
+<!-- <button onclick="show()">click me</button>
+
+<p id="demo">Please visit shree placement services</p>
+
+<script>
+function show() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =
+  text.replace("shree","shrii");
+}
+</script> -->
+
+
+<!-- <p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 100 + 50 * 3;
+</script> -->
+
+<!-- <h2>JavaScript Error Handling</h2>
+<p id="demo"></p>
+
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+</script> -->
+
+
+<!-- <p>Please input a number between 5 and 10:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="sample"></p>
+
+<script>
+function myFunction() {
+  const message = document.getElementById("sample");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try { 
+    if(x.trim() == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+</script> -->
+
+
+<!-- <p>Please input a number between 5 and 10:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+
+<p id="p01">hello</p>
+
+<script>
+function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try { 
+    if(x.trim() == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 10)   throw "is too high";
+    if(x < 5)  throw "is too low";
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+  finally {
+    document.getElementById("demo").value = "";
+  }
+}
+</script> -->
+
+
+<!-- <script>
+    "use strict";
+    x = 3.14;  // This will cause an error (x is not defined).
+    </script> -->
+
+    <!-- <script>
+        "use strict";
+        myFunction();
+        
+        function myFunction() {
+          y = 3.14;   // This will cause an error (y is not defined)
+        }
+        </script> -->
+
+        <!-- <script>
+            x = 3.14;    // This will not cause an error.
+            myFunction();
+            
+            function myFunction() {
+              "use strict";
+              y = 3.14;  // This will cause an error (y is not defined).
+            }
+            </script> -->
+
+            <!-- <p id="demo"></p>
+
+            <script>
+            // Create an object:
+            const person = {
+              firstName: "prem",
+              lastName: "mahajan",
+              id: 5566,
+              fullName : function() {
+                return this.firstName + " " + this.lastName;
+              }
+            };
+            
+            // Display data from the object:
+            document.getElementById("demo").innerHTML = person.fullName();
+            </script> -->
+
+
+            <!-- <p id="demo"></p>
+
+            <script>
+            let myFunction = (a, b) => a * b;
+            document.getElementById("demo").innerHTML = myFunction(4, 5);
+            </script> -->
+
+            <!-- <p id="demo"></p>
+
+            <script>
+            let hello = "";
+            
+            hello = function() {
+              return "Hello World!";
+            }
+            
+            document.getElementById("demo").innerHTML = hello();
+            </script> -->
+
+            <!-- <p id="demo"></p>
+
+            <script>
+            let hello = "";
+            
+            hello = () => {
+              return "Hello World!...";
+            }
+            
+            document.getElementById("demo").innerHTML = hello();
+            </script> -->
+
+            <!-- <p id="demo"></p>
+
+            <script>
+            class Car {
+              constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            
+              }
+              age() {
+                const date = new Date();
+                return date.getFullYear() - this.year;
+              }
+            }
+            
+            const myCar = new Car("Ford", 2013);
+            document.getElementById("demo").innerHTML =
+            "My car is " + myCar.age() + " years old.";
+            </script> -->
+
+            <!-- <p id="demo"></p>
+
+            <script type="module">
+            import message from "./message.js";
+            
+            
+            document.getElementById("demo").innerHTML = message();
+            
+            </script> -->
+
+<!-- 
+            <p id="demo"></p>
+
+            <script>
+            let text = '{"employees":[' +
+            '{"firstName":"prem","lastName":"mahajan" },' +
+            '{"firstName":"sachin","lastName":"Patil" },' +
+            '{"firstName":"Prasad","lastName":"mane" }]}';
+            
+            const obj = JSON.parse(text);
+            document.getElementById("demo").innerHTML =
+            obj.employees[1].firstName + " " + obj.employees[1].lastName;
+            </script> -->
+
+           
+        
+</body>
+</html>
